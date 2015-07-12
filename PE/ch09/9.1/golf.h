@@ -1,4 +1,4 @@
-// golf.h -- for 9.1.cpp
+// golf.h -- for usegolf.cpp
 
 const int Len = 40;
 struct golf

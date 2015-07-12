@@ -1,0 +1,61 @@
+(ch03)
+init.cpp:8:15: warning: implicit conversion from 'double' to 'int' changes
+      value from 3.9832 to 3 [-Wliteral-conversion]
+    int guess(3.9832);  // double converted to float
+        ~~~~~ ^~~~~~
+init.cpp:9:16: warning: implicit conversion from 'double' to 'int' changes
+      value from 7.2E+12 to 2147483647 [-Wliteral-conversion]
+    int debt = 7.2E12;  // result not defined in C++
+        ~~~~   ^~~~~~
+2 warnings generated.
+(ch04)
+choices.cpp:27:5: warning: array index -2 is before the beginning of the array
+      [-Warray-bounds]
+    a1[-2] = 20.2;
+    ^  ~~
+choices.cpp:9:5: note: array 'a1' declared here
+    double a1[4] = {1.2, 2.4, 3.6, 4.8};
+    ^
+1 warning generated.
+(ch05)
+equal.cpp:16:31: warning: using the result of an assignment as a condition
+      without parentheses [-Wparentheses]
+    for (i = 0; quizscores[i] = 20; i++)
+                ~~~~~~~~~~~~~~^~~~
+equal.cpp:16:31: note: place parentheses around the assignment to silence this
+      warning
+    for (i = 0; quizscores[i] = 20; i++)
+                              ^
+                (                 )
+equal.cpp:16:31: note: use '==' to turn this assignment into an equality
+      comparison
+    for (i = 0; quizscores[i] = 20; i++)
+                              ^
+                              ==
+1 warning generated.
+(ch07)
+arrfun2.cpp:31:25: warning: sizeof on array function parameter will return
+      size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
+    std::cout << sizeof arr << " = sizeof arr\n";
+                        ^
+arrfun2.cpp:25:17: note: declared here
+int sum_arr(int arr[], int n)
+                ^
+1 warning generated.
+strgfun.cpp:11:18: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+    char *wail = "ululate";
+                 ^
+1 warning generated.
+(ch08)
+leftover.cpp:9:19: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+    char * trip = "Hawaii!!";   // test value
+                  ^
+1 warning generated.
+strquote.cpp:57:12: warning: reference to stack memory associated with local
+      variable 'temp' returned [-Wreturn-stack-address]
+    return temp;
+           ^~~~
+1 warning generated.
+

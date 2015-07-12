@@ -31,5 +31,8 @@
 *~
 *.tmp
 
-# One shell script
+# Shell scripts
 *.sh
+
+# Backup files
+*.bak

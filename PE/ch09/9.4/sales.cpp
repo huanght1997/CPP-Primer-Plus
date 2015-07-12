@@ -30,7 +30,7 @@ namespace SALES
         }
         double total = 0;
         s.max = s.min = s.sales[0];
-         for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             total += s.sales[i];
             if (s.max < s.sales[i])
