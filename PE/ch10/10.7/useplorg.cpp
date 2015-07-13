@@ -17,8 +17,8 @@
 #include "plorg.h"
 int main()
 {
-    Plorg p1 = Plorg();
-    Plorg p2 = Plorg("Orion");
+    Plorg p1;
+    Plorg p2("Orion");
     p1.report();
     p2.report();
     std::cout << "Change the CI of Orion: ";

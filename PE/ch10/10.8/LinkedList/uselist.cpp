@@ -5,7 +5,7 @@ void display(Item &);
 void triple(Item &);
 int main()
 {
-    List numbers = List();
+    List numbers;
     cout << "Enter at most 10 numbers, q to quit:\n";
     double num;
     while (cin >> num && !numbers.isFull())

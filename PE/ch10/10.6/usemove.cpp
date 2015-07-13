@@ -9,8 +9,8 @@
 int main()
 {
     using namespace std;
-    Move m1 = Move();
-    Move m2 = Move(3,4);
+    Move m1;
+    Move m2(3,4);
     cout << "m1: ";
     m1.showmove();
     cout << "m2: ";
