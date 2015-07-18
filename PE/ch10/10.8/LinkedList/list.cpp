@@ -5,6 +5,22 @@ List::List()
     count = 0;
     head = NULL;
 }
+
+List::~List()
+{
+    Node * temp = head;
+    Node * front;
+    if (temp == NULL)
+        return;
+    while (temp->next != NULL)
+    {
+        front = temp;
+        temp = temp->next;
+        delete front;
+    }
+    delete temp;
+}
+    
 bool List::add(Item data)
 {
     if (this->isFull())

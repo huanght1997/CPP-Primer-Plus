@@ -1,0 +1,18 @@
+Enhance the String class declaration (that is, upgrade string1.h to string2.h ) by doing the following:
+a. Overload the + operator to allow you to join two strings into one.
+b. Provide a stringlow() member function that converts all alphabetic characters in a string to lowercase. (Don’t forget the cctype family of character functions.)
+c. Provide a stringup() member function that converts all alphabetic characters in a string to uppercase.
+d. Provide a member function that takes a char argument and returns the number of times the character appears in the string.
+Test your work in the following program:
+(It's pe12_2.cpp)
+Your output should look like this sample run:
+Please enter your name: Fretta Farbo
+My name is Fretta Farbo.
+The string
+MY NAME IS FRETTA FARBO AND I AM A C++ STUDENT.
+contains 6 'A' characters in it.
+Enter the name of a primary color for mixing light: yellow
+Try again!
+BLUE
+That's right!
+Bye

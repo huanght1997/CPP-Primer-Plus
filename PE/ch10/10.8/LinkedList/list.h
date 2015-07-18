@@ -14,6 +14,7 @@ class List
         int count;
     public:
         List();
+        ~List();
         bool add(Item data);
         bool isEmpty();
         bool isFull();

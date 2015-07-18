@@ -1,7 +1,8 @@
 Please use them with C++ Primer Plus, 6th Edition by Stephen Prata.
 The source code files in PE directory are all made by myself.
+Tested in 64-bit Ubuntu 14.04.2 LTS.
 You can download another reference answer set in http://www.informit.com/content/images/0672326973/downloads/cpp5sol.zip
-
+(Note: The link above is for C++ Primer Plus, 5th Edition, but almost suitable for this version.)
 I wrote Makefile in each directory excluding PE, you can use make to generate the executable files.
 You can also:
 make cleanobj -- clean the generated object files.
@@ -47,3 +48,31 @@ $ equal.out
 quiz 1343 is a 20
 Segmentation fault (Core Dumped)
 (May not be 1343 but other integers)
+
+$ vegnews.out
+Starting an inner block.
+1: "Celery Stalks at Midnight" object created
+2: "Lettuce Prey" object created
+3: "Spinach Leaves Bowl for Dollars" object created
+headline1: Celery Stalks at Midnight
+headline2: Lettuce Prey
+sports: Spinach Leaves Bowl for Dollars
+String passed by reference:
+    "Celery Stalks at Midnight"
+headline1: Celery Stalks at Midnight
+String passed by value:
+    "Lettuce Prey"
+"Lettuce Prey" object deleted, 2 left
+headline2: 
+Initialize one object to another:
+sailor: Spinach Leaves Bowl for Dollars
+Assign one object to another:
+3: "C++" default object created
+knot: Celery Stalks at Midnight
+Exiting the block.
+"Celery Stalks at Midnight" object deleted, 2 left
+"Spinach Leaves Bowl for Dollars" object deleted, 1 left
+"" object deleted, 0 left
+*** Error in `vegnews.out': double free or corruption (fasttop): 0x0000000001d9d060 ***
+Aborted (Core dumped)
+
