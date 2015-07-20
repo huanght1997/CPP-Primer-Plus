@@ -1,0 +1,19 @@
+Start with the following class declaration:
+// base class
+class Cd { // represents a CD disk
+private:
+    char performers[50];
+    char label[20];
+    int selections;     // number of selections
+    double playtime;    // playing time in minutes
+public:
+    Cd(char * s1, char * s2, int n, double x);
+    Cd(const Cd & d);
+    Cd();
+    ~Cd();
+    void Report() const; // reports all CD data
+    Cd & operator=(const Cd & d);
+};
+
+Derive a Classic class that adds an array of char members that will hold a string identifying the primary work on the CD. If the base class requires that any functions be virtual, modify the base-class declaration to make it so. If a declared method is not needed, remove it from the definition.Test your product with the following program:
+(It's useclassic.cpp)
