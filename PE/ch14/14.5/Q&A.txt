@@ -1,0 +1,27 @@
+Q:
+Here are some class declarations:
+(In emp.h)
+Note that the class hierarchy uses MI with a virtual base class, so keep in mind the special rules for constructor initialization lists for that case.Also note the presence of some protected-access methods.This simplifies the code for some of the highfink methods. (Note, for example, that if highfink::ShowAll() simply calls fink::ShowAll() and manager::ShowAll() , it winds up calling abstr_emp::ShowAll() twice.) Provide the class method implementations and test the classes in a program. Here is a minimal test program:
+(It's useemp1.cpp)
+A: (It's emp.cpp)
+
+Q: Why is no assignment operator defined?
+A: Because the default operator=() function is ok, no need to define.
+
+Q: Why are ShowAll() and SetAll() virtual?
+A: Because the derived classes have different implementations of ShowAll() and SetAll(), and in useemp1.cpp, we use the pointer to abstr_emp. If they are not virtual, tri[i]->ShowAll() will call the abstr_emp::ShowAll() function, which is not the member function of the real type of the object.
+
+Q: Why is abstr_emp a virtual base class?
+A: Because we have the class highfink, which derived from two class that have the same parent, abstr_emp. If not virtual, abstr_emp will be contained twice in a highfink object, and it may cause some obstacles.
+
+Q: Why does the highfink class have no data section?
+A: Because all the data of highfink class have already be derived from manager class and fink class.
+
+Q: Why is only one version of operator<<() needed?
+A: Because the operator<<() functions of the subclasses of abstr_emp class are the same.
+
+Q: What would happen if the end of the program were replaced with this code?
+    abstr_emp tri[4] = {em, fi, hf, hf2};
+    for (int i = 0; i < 4; i++)
+        tri[i].ShowAll();
+A: abstr_emp::ShowAll() will be called four times. Because em, fi, hf, hf2 have been converted to abstr_emp class when assigned to the array's elements.

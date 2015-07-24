@@ -58,4 +58,63 @@ strquote.cpp:57:12: warning: reference to stack memory associated with local
     return temp;
            ^~~~
 1 warning generated.
+(ch14)
+worker0.cpp:46:24: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[] = {"other", "alto", "contralto",
+                       ^
+worker0.cpp:46:33: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[] = {"other", "alto", "contralto",
+                                ^
+worker0.cpp:46:41: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[] = {"other", "alto", "contralto",
+                                        ^
+worker0.cpp:47:13: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+            ^
+worker0.cpp:47:24: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                       ^
+worker0.cpp:47:32: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                               ^
+worker0.cpp:47:44: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                                           ^
+7 warnings generated.
+workermi.cpp:56:38: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[Singer::Vtypes] = {"other", "alto", "contralto",
+                                     ^
+workermi.cpp:56:47: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[Singer::Vtypes] = {"other", "alto", "contralto",
+                                              ^
+workermi.cpp:56:55: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * Singer::pv[Singer::Vtypes] = {"other", "alto", "contralto",
+                                                      ^
+workermi.cpp:57:13: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+            ^
+workermi.cpp:57:24: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                       ^
+workermi.cpp:57:32: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                               ^
+workermi.cpp:57:44: warning: conversion from string literal to 'char *' is
+      deprecated [-Wc++11-compat-deprecated-writable-strings]
+            "soprano", "bass", "baritone", "tenor"};
+                                           ^
+7 warnings generated.
 

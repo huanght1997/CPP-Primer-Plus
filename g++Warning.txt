@@ -1,0 +1,45 @@
+(In ch03)
+init.cpp: In function 'int main()':
+init.cpp:9:16: warning: overflow in implicit constant conversion [ -Woverflow]
+     int debt = 7.2E12;  // result not defined in C++
+                ^
+(In ch07)
+strgfun.cpp: In function 'int main()':
+strgfun.cpp:11:18: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+    char *wail = "ululate";
+                 ^
+(In ch08)
+strquote.cpp: In function 'const string& version3(std::string&, const string&)':
+strquote.cpp:53:12: warning: reference to local variable 'temp' returned [-Wreturn-local-addr]
+    string temp;
+           ^
+
+leftover.cpp: In function 'int main()':
+leftover.cpp:9:19: warning: deprecated conversion from string constant to 'char*' [Wwrite-strings]
+    char * trip = "Hawaii!!";
+                  ^
+(In ch14)
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+             "soprano", "bass", "baritone", "tenor"};
+                                                   ^
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+worker0.cpp:47:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+             "soprano", "bass", "baritone", "tenor"};
+                                                   ^
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+workermi.cpp:57:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+
+frnd2tmp.cpp:16:43: warning: friend declaration ‘void reports(HasFriend<T>&)’ declares a non-template function [-Wnon-template-friend]
+         friend void reports(HasFriend<T> &);    // template parameter
+                                           ^
+frnd2tmp.cpp:16:43: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
