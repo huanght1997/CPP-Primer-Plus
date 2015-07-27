@@ -222,3 +222,23 @@
 14.22 frnd2tmp.cpp
 14.23 tmp2tmp.cpp
 14.24 manyfrnd.cpp
+
+15.1 tv.h
+15.2 tv.cpp
+15.3 use_tv.cpp
+15.4 tvfm.h
+15.5 queuetp.h
+15.6 nested.cpp
+15.7 error1.cpp
+15.8 error2.cpp
+15.9 error3.cpp
+15.10 exc_mean.h
+15.11 error4.cpp
+15.12 error5.cpp
+15.13 newexcp.cpp
+15.14 sales.h
+15.15 sales.cpp
+15.16 use_sales.cpp
+15.17 rtti1.cpp
+15.18 rtti2.cpp
+15.19 constcast.cpp
