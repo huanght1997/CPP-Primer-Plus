@@ -242,3 +242,26 @@
 15.17 rtti1.cpp
 15.18 rtti2.cpp
 15.19 constcast.cpp
+
+16.1 str1.cpp
+16.2 strfile.cpp
+16.3 hangman.cpp
+16.4 str2.cpp
+16.5 smrtptrs.cpp
+16.6 fowl.cpp
+16.7 vect1.cpp
+16.8 vect2.cpp
+16.9 vect3.cpp
+16.10 copyit.cpp
+16.11 inserts.cpp
+16.12 list.cpp
+16.13 setops.cpp
+16.14 multmap.cpp
+16.15 functor.cpp
+16.16 funadap.cpp
+16.17 strgst1.cpp
+16.18 listrmv.cpp
+16.19 usealgo.cpp
+16.20 valvect.cpp
+16.21 vslice.cpp
+16.22 ilist.cpp
