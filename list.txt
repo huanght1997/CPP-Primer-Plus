@@ -288,3 +288,18 @@
 17.20 random.cpp
 17.21 strout.cpp
 17.22 strin.cpp
+
+18.1 rvref.cpp
+18.2 useless.cpp
+18.3 stdmove.cpp
+18.4 lambda0.cpp
+18.5 lambda1.cpp
+18.6 somedefs.h
+18.7 callable.cpp
+18.8 wrapped.cpp
+18.9 variadic1.cpp
+18.10 variadic2.cpp
+18.11 lexcast.cpp
+
+E.1 memb_pt.cpp
+E.2 align.cpp
