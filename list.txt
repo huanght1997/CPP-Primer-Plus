@@ -265,3 +265,26 @@
 16.20 valvect.cpp
 16.21 vslice.cpp
 16.22 ilist.cpp
+
+17.1 write.cpp
+17.2 defaults.cpp
+17.3 manip.cpp
+17.4 width.cpp
+17.5 fill.cpp
+17.6 precise.cpp
+17.7 showpt.cpp
+17.8 setf.cpp
+17.9 setf2.cpp
+17.10 iomanip.cpp
+17.11 check_it.cpp
+17.12 cinexcp.cpp
+17.13 get_fun.cpp
+17.14 peeker.cpp
+17.15 truncate.cpp
+17.16 fileio.cpp
+17.17 count.cpp
+17.18 append.cpp
+17.19 binary.cpp
+17.20 random.cpp
+17.21 strout.cpp
+17.22 strin.cpp

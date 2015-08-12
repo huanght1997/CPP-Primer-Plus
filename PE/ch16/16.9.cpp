@@ -37,7 +37,7 @@
 #include <list>
 #include <algorithm>
 #include <ctime>
-const unsigned long NUM = 1000000;
+const unsigned long NUM = 1000000UL;
 int main()
 {
     using namespace std;
